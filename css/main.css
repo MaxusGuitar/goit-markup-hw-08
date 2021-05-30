@@ -58,6 +58,13 @@ img {
   max-height: auto;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  img {
+    max-width: 354px;
+    max-height: 374px;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -803,8 +810,13 @@ header .container {
 }
 
 .list-team {
-  display: flex;
   justify-content: space-between;
+}
+
+@media screen and (min-width: 1200px) {
+  .list-team {
+    display: flex;
+  }
 }
 
 .people-list {

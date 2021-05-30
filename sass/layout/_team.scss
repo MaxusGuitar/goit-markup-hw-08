@@ -4,8 +4,10 @@
   background: white;
 }
 .list-team {
-  display: flex;
   justify-content: space-between;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .people-list {
