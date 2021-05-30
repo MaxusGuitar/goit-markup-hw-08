@@ -21,6 +21,7 @@ h3 {
 ::after {
   margin: 0;
   padding: 0;
+  outline: 1px solid red;
 }
 
 html {
@@ -51,6 +52,12 @@ nav {
   display: flex;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  max-height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -67,9 +74,27 @@ nav {
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
+  width: 100%;
   padding: 0px 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 header .container {
