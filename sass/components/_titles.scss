@@ -41,6 +41,11 @@
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 
 .title-name {

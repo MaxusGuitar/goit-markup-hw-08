@@ -54,14 +54,28 @@ nav {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   max-height: auto;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767.99px) {
+  img {
+    max-width: 450px;
+    max-height: 460px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   img {
     max-width: 354px;
     max-height: 374px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  img {
+    max-width: 270px;
+    max-height: 260px;
   }
 }
 
@@ -81,14 +95,18 @@ img {
 }
 
 .container {
-  width: 100%;
-  padding: 0px 15px;
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -548,6 +566,13 @@ header .container {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 768px) {
+  .title-section {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
 .title-name {
   font-family: var(--anyfont);
   color: var(--title-color);
@@ -811,6 +836,14 @@ header .container {
 
 .list-team {
   justify-content: space-between;
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .list-team {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -821,10 +854,27 @@ header .container {
 
 .people-list {
   background-color: var(--backcol);
-  width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .people-list {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .people-list {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .people-list {
+    width: 270px;
+  }
 }
 
 .project-port {
