@@ -22,9 +22,32 @@
   margin-right: 10px;
 }
 
-.about-icon {
-  width: 270px;
-  height: 120px;
+.about-icon-antena::before {
+  background-image: url(../icons/antenna1.svg);
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-icon-clock::before {
+  background-image: url(../icons/clock1.svg);
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-icon-diagram::before {
+  background-image: url(../icons/diagram1.svg);
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-icon-astronaut::before {
+  background-image: url(../icons/astronaut1.svg);
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .icon-client {

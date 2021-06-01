@@ -58,27 +58,6 @@ img {
   max-height: auto;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767.99px) {
-  img {
-    max-width: 450px;
-    max-height: 460px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  img {
-    max-width: 354px;
-    max-height: 374px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  img {
-    max-width: 270px;
-    max-height: 260px;
-  }
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -359,9 +338,32 @@ header .container {
   margin-right: 10px;
 }
 
-.about-icon {
-  width: 270px;
-  height: 120px;
+.about-icon-antena::before {
+  background-image: url(../icons/antenna1.svg);
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-icon-clock::before {
+  background-image: url(../icons/clock1.svg);
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-icon-diagram::before {
+  background-image: url(../icons/diagram1.svg);
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-icon-astronaut::before {
+  background-image: url(../icons/astronaut1.svg);
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .icon-client {
@@ -563,7 +565,18 @@ header .container {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .title-section {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .title-section {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -750,13 +763,51 @@ header .container {
   color: var(--bluecol);
 }
 
-.about-list {
-  display: flex;
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .about-list {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-.about-list-item:not(:last-child) {
-  margin-right: 30px;
-  width: 270px;
+@media screen and (min-width: 1200px) {
+  .about-list {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-list {
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .about-list-item:not(:last-child) {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-list-item:not(:last-child) {
+    margin: 15px;
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-list-item:not(:last-child) {
+    width: 270px;
+  }
+}
+
+.about-list-item::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 120px;
+  background-color: #f5f4fa;
 }
 
 .about-section {
@@ -874,6 +925,18 @@ header .container {
 @media screen and (min-width: 1200px) {
   .people-list {
     width: 270px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .people-list {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .people-list {
+    width: 100%;
   }
 }
 
