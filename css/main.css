@@ -74,18 +74,14 @@ img {
 }
 
 .container {
-  max-width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0px 15px;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -811,8 +807,15 @@ header .container {
 }
 
 .about-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .about-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .list-img-section {
