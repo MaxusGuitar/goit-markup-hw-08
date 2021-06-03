@@ -770,31 +770,50 @@ header .container {
 @media screen and (min-width: 1200px) {
   .about-list {
     display: flex;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .about-list {
     flex-wrap: nowrap;
   }
 }
 
 @media screen and (max-width: 767.98px) {
-  .about-list-item:not(:last-child) {
+  .about-list-item {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .about-list-item:not(:last-child) {
+  .about-list-item {
     margin: 15px;
     width: 354px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .about-list-item:not(:last-child) {
+  .about-list-item {
     width: 270px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-list-item:nth-child(1) {
+    margin: 15px 0px 15px 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-list-item:nth-child(2) {
+    margin: 15px 0px 15px 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-list-item:nth-child(3) {
+    margin: 15px 0px 15px 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-list-item:nth-child(4) {
+    margin: 15px 0px 15px 30px;
   }
 }
 
