@@ -1,19 +1,35 @@
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   background: white;
 }
+
 .list-team {
   justify-content: space-between;
   flex-basis: 100%;
 
-  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  @media screen and (max-width: 1199.98px) {
     display: flex;
     flex-wrap: wrap;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
+  }
+}
+
+.clietns-team {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+
+  @media screen and (max-width: 479px) {
+    display: block;
   }
 }
 

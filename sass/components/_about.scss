@@ -49,6 +49,10 @@
     }
   }
 
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
   &::before {
     content: "";
     display: inline-block;

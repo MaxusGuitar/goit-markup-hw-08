@@ -61,15 +61,36 @@
   justify-content: center;
   align-items: center;
   display: flex;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
   &:hover,
   &:focus {
     fill: var(--bluecol);
     border-color: var(--bluecol);
   }
+
+  @media screen and (max-width: 767.98px) and (max-width: 1199.98px) {
+    height: 92px;
+  }
+
+  @media screen and (max-width: 479.98px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 224px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+}
+
+.clients-list__item {
+  margin: 15px;
 }
 
 .icon-form {
