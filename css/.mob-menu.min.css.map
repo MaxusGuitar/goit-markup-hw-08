@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,AAAC,CACb,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,gBAAgB,CAAE,WAAW,CAC7B,MAAM,CAAE,IAAI,CACb",
+    "sources": [
+        "../sass/components/.mob-menu.scss"
+    ],
+    "names": [],
+    "file": ".mob-menu.min.css"
+}

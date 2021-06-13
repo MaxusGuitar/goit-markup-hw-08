@@ -13,7 +13,19 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0 auto 30px auto;
-  width: 696px;
+
+  @media screen and (max-width: 1199.98px) {
+    font-size: 26px;
+    line-height: 42px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 360px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+  }
 }
 
 .about-title {
@@ -174,7 +186,7 @@
 
 .form-label {
   font-family: Roboto;
-  font-weight: 400;
+  font-weight: 900;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;

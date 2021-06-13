@@ -102,8 +102,14 @@ header .container {
 }
 
 .menu {
-  align-items: center;
-  display: flex;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    align-items: center;
+    display: flex;
+  }
 }
 
 .nav-item {
@@ -578,7 +584,25 @@ header .container {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0 auto 30px auto;
-  width: 696px;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .bigblock-title {
+    font-size: 26px;
+    line-height: 42px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .bigblock-title {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bigblock-title {
+    width: 696px;
+  }
 }
 
 .about-title {
@@ -753,7 +777,7 @@ header .container {
 
 .form-label {
   font-family: Roboto;
-  font-weight: 400;
+  font-weight: 900;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -810,8 +834,14 @@ header .container {
 }
 
 .con-list {
-  display: flex;
-  margin-left: auto;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .con-list {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .con-link {
@@ -896,6 +926,24 @@ header .container {
   background-color: #f5f4fa;
 }
 
+.mob-menu__btn {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .mob-menu__btn {
+    display: none;
+  }
+}
+
+.mob-menu__icon-menu {
+  display: block;
+}
+
 .about-section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -924,7 +972,7 @@ header .container {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199.98) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .footer {
     padding-left: 76px;
     padding-right: 89px;
@@ -955,6 +1003,8 @@ header .container {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -962,6 +1012,10 @@ header .container {
   .content {
     flex-direction: column;
   }
+}
+
+.margin-content {
+  padding-right: 0px;
 }
 
 @media screen and (max-width: 1199.98px) {

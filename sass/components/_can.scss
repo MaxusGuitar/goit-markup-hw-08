@@ -1,6 +1,10 @@
 .con-list {
-  display: flex;
-  margin-left: auto;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: auto;
+  }
 }
 .con-link {
   font-weight: 500;
