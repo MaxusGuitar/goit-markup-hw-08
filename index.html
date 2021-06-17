@@ -47,12 +47,43 @@
                        +38 096 111 11 11</a>
                 </li>
             </ul>
-            <button class="mob-menu__btn" type="button">
+            <button class="mob-menu__btn" type="button" data-menu-button aria-expanded="false">
                 <svg class="mob-menu__icon" width="40px" height="40px">
                     <use class="mob-menu__icon-menu" href="sprite.svg#icon-mobmenu"></use>
                     <use class="mob-menu__icon-close" href="sprite.svg#icon-mobclose"></use>
                 </svg>
             </button>
+        </div>
+        <div class="mobile-menu is-open" data-menu>
+            <div class="container">
+                <ul class="mobile-menu__list list-no">
+                    <li class="nav-item__mobile">
+                        <a class="link nav-link" href="#">Студия</a>
+                    </li>
+                    <li class="nav-item__mobile">
+                        <a class="link nav-link" href="portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="nav-item__mobile">
+                        <a class="link nav-link" href="#">Контакты</a>
+                    </li>
+                </ul>
+                                   <a class="link con-link" href="mailto:info@devstudio.com">
+                            <svg class="icon-mail">
+                                <use href="sprite.svg#icon-mail"></use>
+                            </svg>
+                            info@devstudio.com</a>
+                                           <a class="link con-link" href="tel:+380961111111">
+                            <svg class="icon-phone">
+                                <use href="sprite.svg#icon-smartphone2"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
+                            <ul class="list-no">
+                                <li><a href="">Instagram</a></li>
+                                <li><a href="">Twitter</a></li>
+                                <li><a href="">Facebook</a></li>
+                                <li><a href="">LinkedIn</a></li>
+                            </ul>
+                               </div>
         </div>
     </header>
     <main>
@@ -438,6 +469,7 @@
         </div>
    
     <script src="js/js.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>

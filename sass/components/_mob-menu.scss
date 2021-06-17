@@ -19,3 +19,19 @@
 
 .mob-menu__icon-close {
 }
+
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  background: #ffffff;
+  padding: 48px 40px;
+
+  .is-open {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

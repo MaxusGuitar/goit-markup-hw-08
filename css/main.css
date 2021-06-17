@@ -944,6 +944,22 @@ header .container {
   display: block;
 }
 
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  background: #ffffff;
+  padding: 48px 40px;
+}
+
+.mobile-menu .is-open {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .about-section {
   padding-top: 60px;
   padding-bottom: 60px;
